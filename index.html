@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Data Academy</div>
+
+    <button class="hamburger-btn" id="hamburger-btn" aria-label="Mở menu" aria-expanded="false">
+      <img src="hbg-btn.jpg" alt="Biểu tượng menu">
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <ul class="nav-menu">
+        <li><a href="#hero">Trang chủ</a></li>
+        <li><a href="#noi-dung">Khóa học</a></li>
+        <li><a href="#dang-ky">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!--hero-->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Khóa học Online 8 tuần</p>
+    <h1 class="hero-title">Nhập môn Khoa học Dữ liệu - Từ Excel đến Machine Learning</h1>
+    <p class="hero-desc">
+      Lộ trình dành cho người mới bắt đầu: học Python, xử lý dữ liệu thực tế
+      và xây dựng mô hình Machine Learning đầu tiên của bạn, dưới sự hướng dẫn
+      trực tiếp từ giảng viên có kinh nghiệm thực chiến.
+    </p>
+    <a href="#dang-ky" class="btn-cta">Đăng ký ngay</a>
+  </div>  
+
+  <div class="hero-image">
+    <img src="hero-datascience.jpg" alt="Biểu đồ trực quan hóa dữ liệu trên màn hình laptop">
+  </div>
+</section>
+
+<!--vì sao chọn khóa học-->
+<section class="why-us" id="vi-sao">
+  <h2 class="section-title">Vì sao chọn khóa học này?</h2>
+
+  <div class="why-list">
+    <article class="why-card">
+      <div class="why-icon">👨‍🏫</div>
+      <h3>Giảng viên thực chiến</h3>
+      <p>Đội ngũ giảng viên có kinh nghiệm làm Data Scientist tại doanh nghiệp thực tế, không chỉ dạy lý thuyết suông.</p>
+    </article>
+
+    <article class="why-card">
+      <div class="why-icon">🗺️</div>
+      <h3>Lộ trình rõ ràng</h3>
+      <p>Từ Python cơ bản đến xây dựng mô hình Machine Learning đầu tiên, chia thành từng bước dễ theo dõi trong 8 tuần.</p>
+    </article>
+
+    <article class="why-card">
+      <div class="why-icon">📊</div>
+      <h3>Thực hành trên dữ liệu thật</h3>
+      <p>Mỗi buổi học đều gắn với dataset thực tế, giúp bạn có sản phẩm cụ thể để đưa vào portfolio cá nhân.</p>
+    </article>
+  </div>
+</section>
+
+<!--nội dung khóa học-->
+<section class="curriculum" id="noi-dung">
+  <h2 class="section-title">Nội dung khóa học</h2>
+  <p class="section-subtitle">4 module, tổng cộng 8 tuần học - từ nền tảng đến dự án thực tế</p>
+
+  <div class="module-list">
+    <article class="module-card">
+      <span class="module-number">01</span>
+      <div class="module-body">
+        <h3>Python &amp; Thống kê nền tảng</h3>
+        <p>Làm quen biến, vòng lặp, hàm trong Python; ôn lại thống kê mô tả cần thiết cho phân tích dữ liệu.</p>
+        <span class="module-duration">Tuần 1–2</span>
+      </div>
+    </article>
+
+    <article class="module-card">
+      <span class="module-number">02</span>
+      <div class="module-body">
+        <h3>Xử lý &amp; làm sạch dữ liệu</h3>
+        <p>Thực hành với thư viện Pandas: đọc file, xử lý dữ liệu thiếu, chuẩn hóa và biến đổi dữ liệu thô.</p>
+        <span class="module-duration">Tuần 3–4</span>
+      </div>
+    </article>
+
+    <article class="module-card">
+      <span class="module-number">03</span>
+      <div class="module-body">
+        <h3>Machine Learning cơ bản</h3>
+        <p>Xây dựng mô hình hồi quy và phân loại đầu tiên, hiểu cách đánh giá độ chính xác của mô hình.</p>
+        <span class="module-duration">Tuần 5–6</span>
+      </div>
+    </article>
+
+    <article class="module-card">
+      <span class="module-number">04</span>
+      <div class="module-body">
+        <h3>Trực quan hóa &amp; kể chuyện bằng dữ liệu</h3>
+        <p>Dùng Matplotlib xây biểu đồ, tổng hợp thành dashboard và trình bày insight cho dự án cuối khóa.</p>
+        <span class="module-duration">Tuần 7–8</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!--Form đăng ký-->
+<section class="contact-section" id="dang-ky">
+  <h2>Đăng ký nhận tư vấn khóa học</h2>
+
+  <form class="contact-form" id="contact-form" novalidate>
+    <div class="form-group">
+      <label for="ho-ten">Họ tên</label>
+      <input type="text" id="ho-ten" name="hoTen">
+      <span class="error-message" id="error-ho-ten"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email">
+      <span class="error-message" id="error-email"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="loi-nhan">Nội dung quan tâm</label>
+      <textarea id="loi-nhan" name="loiNhan" rows="4"></textarea>
+      <span class="error-message" id="error-loi-nhan"></span>
+    </div>
+
+    <button type="submit" class="btn-submit">Gửi đăng ký</button>
+
+    <p class="form-success" id="form-success"></p>
+  </form>
+</section>
+
+<!--Footer-->
+<footer class="site-footer">
+  <div class="footer-content">
+
+    <div class="footer-col">
+      <h3 class="footer-logo">DataKn Academy</h3>
+      <p>Đào tạo Khoa học Dữ liệu thực chiến cho người mới bắt đầu.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Liên kết nhanh</h4>
+      <ul class="footer-links">
+        <li><a href="#hero">Trang chủ</a></li>
+        <li><a href="#noi-dung">Khóa học</a></li>
+        <li><a href="#dang-ky">Đăng ký</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Liên hệ</h4>
+      <ul class="footer-links">
+        <li>Email: lienhe@datakn.vn</li>
+        <li>Điện thoại: 089.xxx.xxx</li>
+        <li>Địa chỉ: 207, Giai Phong, Ha Noi</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="current-year"></span> DataMinds Academy. Bản quyền thuộc về DataMinds Academy.</p>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
