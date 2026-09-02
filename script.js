@@ -5,7 +5,7 @@ function doiClass(el, boClassGo, boClassThem) {
   if (boClassThem) el.classList.add(...boClassThem.split(' '));
 }
 
-// ===== HEADER: TOGGLE MENU HAMBURGER ====
+
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const mainNav = document.getElementById('main-nav');
 
@@ -30,7 +30,6 @@ navLinks.forEach(function (link) {
 });
 
 
-// ===================== FLIP CARD =====================
 const ROTATE_180 = '[transform:rotateY(180deg)]';
 const allCards = document.querySelectorAll('.card');
 
@@ -45,8 +44,6 @@ allCards.forEach(function (card) {
   });
 });
 
-
-// ===================== GIỎ HÀNG =====================
 
 let gioHang = [];
 const DISCOUNT_COMBO = 1000000; 

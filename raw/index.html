@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Academy - Nhập môn Khoa học Dữ liệu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Data Academy</div>
+      <div class="header-right">
+        <nav class="main-nav" id="main-nav">
+          <ul class="nav-menu">
+            <li><a href="#hero">Trang chủ</a></li>
+            <li><a href="#noi-dung">Khóa học</a></li>
+            <li><a href="#dang-ky">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <button class="cart-toggle-btn" id="cart-toggle-btn" aria-label="Xem giỏ hàng" aria-expanded="false">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Mở menu" aria-expanded="false">
+          <img src="hbg-btn.jpg" alt="Menu">
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!--HERO-->
+  <section class="hero" id="hero">
+    <div class = "container hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Khóa học Online 18 tuần</p>
+        <h1 class="hero-title">Nhập môn Khoa học Dữ liệu - Từ Excel đến Machine Learning</h1>
+        <p class="hero-desc">
+          Lộ trình dành cho người mới bắt đầu: học Python, xử lý dữ liệu thực tế
+          và xây dựng mô hình Machine Learning đầu tiên của bạn, dưới sự hướng dẫn
+          trực tiếp từ giảng viên có kinh nghiệm thực chiến.
+        </p>
+        <a href="#dang-ky" class="btn-cta">Đăng ký ngay</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="hero-datascience.jpg" alt="Biểu đồ trực quan hóa dữ liệu trên màn hình laptop">
+      </div>
+    </div>
+  </section>
+
+  <!--VÌ SAO CHỌN KHÓA HỌC -->
+  <section class="why-us" id="vi-sao">
+    <h2 class="section-title">Vì sao chọn khóa học này?</h2>
+
+    <div class="why-list">
+      <article class="why-card">
+        <div class="why-icon">👨‍🏫</div>
+        <h3>Giảng viên thực chiến</h3>
+        <p>Đội ngũ giảng viên có kinh nghiệm làm Data Scientist tại doanh nghiệp thực tế, không chỉ dạy lý thuyết suông.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon">🗺️</div>
+        <h3>Lộ trình rõ ràng</h3>
+        <p>Từ Python cơ bản đến xây dựng mô hình Machine Learning đầu tiên, chia thành từng bước dễ theo dõi.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon">📊</div>
+        <h3>Thực hành trên dữ liệu thật</h3>
+        <p>Mỗi buổi học đều gắn với dataset thực tế, giúp bạn có sản phẩm cụ thể để đưa vào portfolio cá nhân.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- NỘI DUNG KHÓA HỌC -->
+  <section class="curriculum" id="noi-dung">
+    <h2 class="section-title">Nội dung khóa học</h2>
+    <p class="section-subtitle"><br>4 module, tổng cộng 18 tuần học - từ nền tảng đến dự án thực tế.</br> Mua cả 4 module để được giảm ngay 1.000.000đ. 🎉</p>
+
+    <div class="module-list">
+
+      <!-- Module 01 -->
+      <div class="card" data-module-id="1" data-price="2000000">
+        <div class="card-flip-area">
+          <div class="card-inner">
+            <div class="card-side card-front">
+              <div>
+                <span class="module-number">01</span>
+                <div class="module-body">
+                  <h3>Nền tảng Data Science</h3>
+                  <span class="module-duration">Tuần 1–4</span>
+                  <p class="module-price">2.000.000đ</p>
+                </div>
+              </div>
+              <button class="btn-flip" type="button">Xem chi tiết</button>
+            </div>
+            <div class="card-side card-back">
+              <ul class="module-topics">
+                <li>Giới thiệu về Data Science</li>
+                <li>Python cơ bản</li>
+                <li>Kiến thức thống kê cơ bản</li>
+                <li>Làm việc với dữ liệu: CSV, Excel, SQL cơ bản</li>
+                <li>Thực hành xử lý dữ liệu</li>
+              </ul>
+              <p class="module-target"><strong>Dành cho:</strong> Người mới bắt đầu.</p>
+              <button class="btn-flip" type="button">Quay lại</button>
+            </div>
+          </div>
+        </div>
+        <button class="btn-add-cart" type="button">Thêm vào giỏ</button>
+      </div>
+
+      <!-- Module 02 -->
+      <div class="card" data-module-id="2" data-price="2500000">
+        <div class="card-flip-area">
+          <div class="card-inner">
+            <div class="card-side card-front">
+              <div>
+                <span class="module-number">02</span>
+                <div class="module-body">
+                  <h3>Phân tích dữ liệu &amp; Trực quan hóa</h3>
+                  <span class="module-duration">Tuần 5–8</span>
+                  <p class="module-price">2.500.000đ</p>
+                </div>
+              </div>
+              <button class="btn-flip" type="button">Xem chi tiết</button>
+            </div>
+            <div class="card-side card-back">
+              <ul class="module-topics">
+                <li>Data Cleaning</li>
+                <li>Exploratory Data Analysis (EDA)</li>
+                <li>Thống kê ứng dụng</li>
+                <li>Matplotlib, Seaborn, Plotly</li>
+                <li>Dashboard cơ bản</li>
+              </ul>
+              <p class="module-target"><strong>Kết quả:</strong> Tự phân tích 1 bộ dữ liệu hoàn chỉnh.</p>
+              <button class="btn-flip" type="button">Quay lại</button>
+            </div>
+          </div>
+        </div>
+        <button class="btn-add-cart" type="button">Thêm vào giỏ</button>
+      </div>
+
+      <!-- Module 03 -->
+      <div class="card" data-module-id="3" data-price="3000000">
+        <div class="card-flip-area">
+          <div class="card-inner">
+            <div class="card-side card-front">
+              <div>
+                <span class="module-number">03</span>
+                <div class="module-body">
+                  <h3>Machine Learning cơ bản</h3>
+                  <span class="module-duration">Tuần 9–14</span>
+                  <p class="module-price">3.000.000đ</p>
+                </div>
+              </div>
+              <button class="btn-flip" type="button">Xem chi tiết</button>
+            </div>
+            <div class="card-side card-back">
+              <ul class="module-topics">
+                <li>Supervised Learning</li>
+                <li>Unsupervised Learning</li>
+                <li>Scikit-learn</li>
+                <li>Feature Engineering</li>
+                <li>Model Evaluation</li>
+              </ul>
+              <p class="module-target"><strong>Kết quả:</strong> Xây dựng được mô hình dự đoán.</p>
+              <button class="btn-flip" type="button">Quay lại</button>
+            </div>
+          </div>
+        </div>
+        <button class="btn-add-cart" type="button">Thêm vào giỏ</button>
+      </div>
+
+      <!-- Module 04 -->
+      <div class="card" data-module-id="4" data-price="2500000">
+        <div class="card-flip-area">
+          <div class="card-inner">
+            <div class="card-side card-front">
+              <div>
+                <span class="module-number">04</span>
+                <div class="module-body">
+                  <h3>Dự án thực tế &amp; Triển khai</h3>
+                  <span class="module-duration">Tuần 14–18</span>
+                  <p class="module-price">2.500.000đ</p>
+                </div>
+              </div>
+              <button class="btn-flip" type="button">Xem chi tiết</button>
+            </div>
+            <div class="card-side card-back">
+              <ul class="module-topics">
+                <li>End-to-End Project</li>
+                <li>Git &amp; GitHub</li>
+                <li>SQL nâng cao</li>
+                <li>Power BI / Tableau</li>
+                <li>Triển khai bằng Flask/FastAPI</li>
+              </ul>
+              <p class="module-target"><strong>Kết quả:</strong> Có Portfolio để xin việc.</p>
+              <button class="btn-flip" type="button">Quay lại</button>
+            </div>
+          </div>
+        </div>
+        <button class="btn-add-cart" type="button">Thêm vào giỏ</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!--FORM ĐĂNG KÝ -->
+  <section class="contact-section" id="dang-ky">
+    <h2 class="section-title">Đăng ký để được tư vấn miễn phí</h2>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="ho-ten">Họ tên</label>
+        <input type="text" id="ho-ten" name="hoTen">
+        <span class="error-message" id="error-ho-ten"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <span class="error-message" id="error-email"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="loi-nhan">Nội dung quan tâm</label>
+        <input id="loi-nhan" name="loiNhan" rows="4"></input>
+        <span class="error-message" id="error-loi-nhan"></span>
+      </div>
+
+      <button type="submit" class="btn-submit">Đăng ký tư vấn</button>
+
+      <p class="form-success" id="form-success"></p>
+    </form>
+  </section>
+
+  <!--FOOTER-->
+  <footer class="site-footer">
+    <div class="footer-content">
+
+      <div class="footer-col">
+        <h3 class="footer-logo">Data Academy</h3>
+        <p>Đào tạo Khoa học Dữ liệu thực chiến cho người mới bắt đầu.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liên kết nhanh</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Trang chủ</a></li>
+          <li><a href="#noi-dung">Khóa học</a></li>
+          <li><a href="#dang-ky">Đăng ký</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <ul class="footer-links">
+          <li>Email: lienhe@datakn.vn</li>
+          <li>Điện thoại: 089.xxx.xxx</li>
+          <li>Địa chỉ: 207, Giải Phóng, Hà Nội</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Data Academy. Bản quyền thuộc về Data Academy.</p>
+    </div>
+  </footer>
+
+  <!--GIỎ HÀNG (sidebar trượt từ phải) -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-sidebar" id="cart-sidebar" aria-hidden="true">
+    <div class="cart-sidebar-header">
+      <h3>Giỏ hàng của bạn</h3>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Đóng giỏ hàng">✕</button>
+    </div>  
+
+    <ul class="cart-list" id="cart-list">
+      <li class="cart-empty" id="cart-empty">Chưa có module nào được chọn.</li>
+    </ul>
+
+    <div class="cart-summary">
+      <p class="cart-row">Tạm tính: <span id="cart-subtotal">0đ</span></p>
+      <p class="cart-row cart-discount-row" id="cart-discount-row">🎉 Giảm giá combo 4 module: <span id="cart-discount">−1.000.000đ</span></p>
+      <p class="cart-row cart-total-row">Tổng cộng: <strong id="cart-total">0đ</strong></p>
+    </div>
+
+    <button class="btn-checkout" id="btn-checkout" type="button">Thanh toán</button>
+    <p class="checkout-message" id="checkout-message"></p>
+  </aside>
+  <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang" type="button">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
